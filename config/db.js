@@ -12,7 +12,7 @@ export const initializeDatabase = async () => { // Export an asynchronous functi
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     title TEXT NOT NULL,
     description TEXT,
-    status TEXT DEFAULT 'pending'
+    completed TEXT DEFAULT 'pending'
     )
   `); // Execute SQL commands to set up the database schema
   return db; // Return the database connection
