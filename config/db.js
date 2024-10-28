@@ -15,4 +15,5 @@ export const initializeDatabase = async () => {
         status TEXT DEFAULT 'pending'
       )
     `);
+    return db;
 };
